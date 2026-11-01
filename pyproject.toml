@@ -1,0 +1,15 @@
+[project]
+name = "jit-tools"
+version = "0.1.0"
+description = "Demo walkthrough: tool search with embeddings (just-in-time tools for Claude)"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "anthropic>=0.75",
+    "numpy>=1.26",
+    "python-dotenv>=1.0",
+    "sentence-transformers>=3.0",
+]
+
+[tool.uv]
+# Use uv's own native Python builds, not a system/conda one (avoids Intel-vs-ARM mixups)
+python-preference = "only-managed"

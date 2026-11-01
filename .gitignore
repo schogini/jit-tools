@@ -1,0 +1,14 @@
+# secrets
+.env
+
+# local / generated
+.venv/
+__pycache__/
+.cache/
+.DS_Store
+
+# video production assets (kept local)
+renders/
+narration/
+images/
+youtube/
